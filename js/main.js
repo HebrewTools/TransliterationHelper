@@ -29,7 +29,7 @@
 
 	function addSymbol(type, hebrew_char, transliterated_char, uppercase_char) {
 		let hebrew = document.createElement('div');
-		hebrew.classList.add('hebrew', 'inline');
+		hebrew.classList.add('hebrew', 'inline-block');
 		hebrew.textContent = hebrew_char;
 
 		let transliteration = document.createElement('span');
