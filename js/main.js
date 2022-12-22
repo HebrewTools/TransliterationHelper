@@ -127,9 +127,9 @@
 		'◌ֻ':  ['\u016b'],
 		'◌וּ': ['\u00fb'],
 		'◌ְ':  ['<sup>e</sup>'],
-		'◌ׇ':  ['<sup>a</sup>'],
-		'◌':  ['<sup>\u0119</sup>'],
-		'◌ֲ':  ['<sup>o</sup>'],
+		'◌ׇ':  ['<sup>o</sup>'],
+		'◌ֲ':  ['<sup>a</sup>'],
+		'◌ֱ':  ['<sup>\u0119</sup>'],
 	};
 	let uppercase = {
 		'\u02be':  '\u02be', // aleph is the same in uppercase
@@ -159,10 +159,10 @@
 		'\u00f4': '\u00d4',
 		'\u016b': '\u016a',
 		'\u00fb': '\u00db',
-		'<sup>e</sup>': '<sup>E</sup>',
 		'<sup>a</sup>': '<sup>A</sup>',
-		'<sup>\u0119</sup>': '<sup>\u0118</sup>',
+		'<sup>e</sup>': '<sup>E</sup>',
 		'<sup>o</sup>': '<sup>O</sup>',
+		'<sup>\u0119</sup>': '<sup>\u0118</sup>',
 	};
 
 	for (let sym in consonants)
