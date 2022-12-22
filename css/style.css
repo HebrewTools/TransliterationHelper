@@ -1,0 +1,124 @@
+/**
+ * HebrewTools TransliterationHelper
+ * Copyright (C) 2022  Camil Staps
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+@font-face {
+	font-family: SBL_Hebrew;
+	src: url("../fonts/SBL_Hebrew.ttf");
+}
+
+body {
+	font-family: Brill, 'Gentium Plus', serif;
+}
+
+.inline {
+	display: inline
+}
+
+.hebrew {
+	direction: rtl;
+	font-family: SBL_Hebrew;
+}
+
+.transliteration {
+	font-family: Brill, 'Gentium Plus', serif;
+	font-style: italic;
+}
+
+.success {
+	color: green;
+}
+
+.failure {
+	color: red;
+}
+
+div#header {
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+div#main {
+	margin: 0 auto;
+	max-width: 1400px;
+}
+
+div#footer {
+	color: #888;
+	font-size: 12pt;
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+div#footer a {
+	color: inherit;
+}
+
+div.symbol {
+	align-items: center;
+	border: 2px solid #888;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px #ddd;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: inline-block;
+	flex-direction: column;
+	font-size: 32pt;
+	height: 120px;
+	justify-content: center;
+	margin: 10px;
+	width: 120px;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+div.symbol.consonant {
+	background: #fee;
+}
+
+div.symbol.vowel {
+	background: #efe;
+}
+
+div.symbol-content {
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+div.symbol-text {
+	align-items: center;
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+}
+
+div.symbol-text > div > span {
+	margin: 8px;
+}
+
+div.feedback {
+	bottom: 0;
+	flex-grow: 0;
+	font-size: 10pt;
+	height: 20px;
+}
