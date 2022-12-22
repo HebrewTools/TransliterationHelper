@@ -76,11 +76,10 @@ div.symbol {
 	box-sizing: border-box;
 	cursor: pointer;
 	display: inline-block;
-	flex-direction: column;
 	font-size: 32pt;
 	height: 120px;
-	justify-content: center;
 	margin: 10px;
+	vertical-align: bottom;
 	width: 120px;
 
 	-webkit-touch-callout: none;
@@ -101,7 +100,10 @@ div.symbol.vowel {
 
 div.symbol-content {
 	display: flex;
-	height: 100%;
+	flex-direction: column;
+	height: calc(100% - 40px);
+	justify-content: center;
+	margin-top: 20px;
 	width: 100%;
 }
 
@@ -117,8 +119,7 @@ div.symbol-text > div > span {
 }
 
 div.feedback {
-	bottom: 0;
-	flex-grow: 0;
 	font-size: 10pt;
 	height: 20px;
+	text-align: center;
 }
